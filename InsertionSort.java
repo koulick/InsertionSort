@@ -4,12 +4,12 @@ public class InsertionSort {
 	public static void main(String args[])
 	{
 		int numbers[] = new int[6];
-		numbers[0] = 5; //31;
-		numbers[1] = 2; //41;
-		numbers[2] = 4; //59;
-		numbers[3] = 6; //26;
-		numbers[4] = 1; //41;
-		numbers[5] = 3; //58;
+		numbers[0] = 5;
+		numbers[1] = 2;
+		numbers[2] = 4;
+		numbers[3] = 6;
+		numbers[4] = 1;
+		numbers[5] = 3;
 		
 		insertionSort(numbers, numbers.length);
 		
@@ -26,13 +26,13 @@ public class InsertionSort {
 	  for (j = 1; j < array_size; j++)
 	  {
 		  key = numbers[j];
-          i = j - 1;
-          while (i >= 0 && (numbers[i] > key))
-          {
-                   numbers[i+1] = numbers[i];
-                   i = i - 1;
-          }
-          numbers[i+1] = key;
-	  }
+		  i = j - 1;
+		  while (i >= 0 && (numbers[i] > key))
+		  {
+			   numbers[i+1] = numbers[i];
+			   i = i - 1;
+		  }
+		  numbers[i+1] = key;
+		  }
 	}
 }
